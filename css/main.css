@@ -87,6 +87,117 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ----- Base Header & Footer Styles (MOBILE) ------ */
+html {
+  margin: auto;
+}
+header, footer {
+  width: 90%;
+  margin: auto;
+}
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-area img {
+  width: 70%;
+  height: auto;
+  margin: 0;
+  padding: 15px 0 10 0;
+}
+.title-area nav {
+  width: 60%;
+  padding: 20px 0 15 0;
+}
+.title-area nav ul {
+  margin: 0;
+}
+
+footer {
+  padding-top: 50px;
+}
+.contact {
+  width: 56%;
+  margin: 50px 0;
+}
+.contact h4 {
+  padding: 20px 0;
+}
+.contact p {
+  margin: 0;
+  padding-bottom: 50px;
+}
+.social h4 {
+  padding: 20px 0;
+}
+.copyright {
+  padding: 20px 0;
+}
+
+/* ----- Mobile Layout - Main page ------ */
+.hero-area, aside, .features, .reviews, .mission, .contact-section, .faq{
+  width: 90%;
+  margin: auto;
+}
+.hero-area p, .features p, footer p {
+  margin: 0;
+}
+.hero-area h1, aside, .features, .reviews {
+  padding: 50px 0;
+}
+aside h3 {
+  padding: 20px 0;
+}
+aside p {
+  padding-bottom: 30px;
+}
+input[type=text] {
+  padding: 1em 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+input[type=button] {
+  padding: 20px 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.features h2 {
+  margin: 0;
+  padding-bottom: 60px;
+}
+.features-icon {
+  padding: 30px 0 40px 0;
+  margin: 0;
+  width: 20%;
+}
+.features-icon-description {
+  padding-bottom: 30px;
+  width: 60%;
+}
+
+.reviews h2 {
+  padding-bottom: 40px;
+}
+.reviews h3, .reviews p {
+padding-top: 20px;
+}
+
+/* ----- Mobile Layout - About ------ */
+.mission, .contact-section {
+  padding: 50px 0;
+}
+
+/* ----- Mobile Layout - FAQ ------ */
+.faq h2, .faq-q2, .faq-q3, .faq-q4 {
+  padding-top: 50px;
+}
+.faq-q1 {
+  padding-top: 40px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

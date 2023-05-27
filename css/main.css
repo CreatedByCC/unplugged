@@ -92,39 +92,88 @@ html, body{
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
+  
 }
+html {
+  font-size: 1rem;
+}
+body {
+  font-size: 1em;
+}
+
    
 /* ----- Mobile Layout ------ */
-.header-area, .headline, .form-wrapper, .features-wrapper, .reviews-wrapper, .footer-wrapper, 
-  .mission, .contact-section, .faq-wrapper {
+header, footer {
+  background-color: #202322;
+}
+.headline-section, .mission-section, .faq-section {
+  background-color: #527158;
+}
+.reviews-section, .contact-section {
+  background-color: #2a423a;
+}
+h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2.25em;
+  line-height: 43px;
+  font-weight: 500;
+}
+h2 {
+  font-size: 1.875em;
+  font-weight: 500;
+}
+h3, h4 {
+  font-size: 1.125em;
+  font-weight: 500;
+}
+p {
+  font-size: 0.875em;
+  line-height: 18px;
+}
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+.header-section, .headline, .form-wrapper, .features-wrapper, .reviews-wrapper, .footer-section, 
+.mission, .contact-area, 
+.faq-wrapper {
     width: 90%;
     margin: auto;
-  }
+}
 
 /* ----- Mobile Layout - Header & Footer ------ */
-.header-area, .footer-wrapper {
+.header-section, .footer-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
-.header-area img {
-  display: inline-flex;
+.header-section img {
   width: 70%;
   height: auto;
   margin: 0;
-  padding: 15px 0 10 0;
+  padding: 15px 0 10px 0;
 }
-.header-area nav {
+.header-section nav {
   width: 60%;
   padding: 20px 0 15px 0;
+  font-size: 1.125em;
+  font-weight: bold;
+  border-top: 2px solid #3a3a3a;
 }
-.header-area nav ul {
+.header-section nav ul {
   margin: 0;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.footer-wrapper {
+.footer-section {
   padding-top: 50px;
 }
 .contact {
@@ -165,11 +214,15 @@ input[type=text] {
   padding: 1em 0;
   width: 100%;
   margin-bottom: 20px;
+  color: #2a423a;
+  font-size: 1.125em;
+  font-weight: 500;
 }
 input[type=button] {
   padding: 20px 0;
   margin-top: 20px;
   width: 100%;
+  background-color: #2a423a;
 }
 
 .features h2 {
@@ -186,6 +239,9 @@ input[type=button] {
   width: 60%;
 }
 
+.reviews-wrapper,.contact-section {
+  background-color: #2a423a;
+}
 .reviews-wrapper h2 {
   padding-bottom: 40px;
 }
@@ -201,7 +257,7 @@ padding-top: 20px;
 }
 
 /* ----- Mobile Layout - About ------ */
-.mission, .contact-section {
+.mission, .contact-area {
   padding: 50px 0;
 }
 
@@ -209,8 +265,11 @@ padding-top: 20px;
 .faq h2 {
   padding-bottom: 40px;
 }
+.faq h4 {
+  line-height: 24px;
+}
 .faq-q1, .faq-q2, .faq-q3, .faq-q4 {
-  padding-bottom: 50px;
+  padding-bottom: 50px; 
 }
 
 
@@ -304,24 +363,46 @@ padding-top: 20px;
 
 /* ----- Tablet layout ------ */
 @media only screen and (min-width: 768px) {     
-  .header-area, .headline, .form-wrapper, .features-wrapper, .reviews-wrapper, .footer-wrapper, 
-  .mission, .contact-section, .faq-wrapper {
+  .header-section, .headline, .form-wrapper, .features-wrapper, .reviews-wrapper, .footer-section, 
+  .mission, .contact-area, .faq-wrapper {
     max-width: 640px;
+  }
+  h1{
+    font-size: 3em;
+    line-height: 48px;
+  }
+  h2 {
+    font-size: 2.25em;
+    line-height: 48px;
+  }
+  h3 {
+    font-size: 1.5em;
+    line-height: 30px;
+  }
+  footer h4, .contact h4 {
+    font-size: 1.5em;
+  }
+  footer p{
+    line-height: 18px;
+  }
+  .faq h4, .faq p {
+    font-size: 0.875em;
+    line-height: 15.75px;
   }
   
 /* ----- Tablet layout - Main page ------ */
-  .header-area{
+  .header-section{
       flex-direction: row;
       justify-content: space-between;
       padding: 33px 0;
     }
-  .header-area img {
+  .header-section img {
     width: 30%;
     }
-  .header-area nav {
+  .header-section nav {
     width: 20%;
     }
-  .hero-area, .features, .reviews-wrapper, .footer-area {
+  .hero-area, .features, .reviews-wrapper, .footer-wrapper {
     padding: 100px 0;
     }
   .hero-area h1 {
@@ -361,7 +442,7 @@ padding-top: 20px;
   .reviews img, .reviews article {
     width: 49%;
     }
-  .footer-area {
+  .footer-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -370,7 +451,7 @@ padding-top: 20px;
   .contact, .social {
     margin: 0;
     }
-  .footer-area h4 {
+  .footer-wrapper h4 {
     padding-bottom: 40px;
     }
 
@@ -399,15 +480,34 @@ padding-top: 20px;
     }  
   }
   
+
   /* ----- Desktop Layout------ */
   @media only screen and (min-width: 1200px) {
-    .header-area, .headline, .form-wrapper, .features-wrapper, .reviews-wrapper, .footer-wrapper, 
-    .mission, .contact-section, .faq-wrapper {
+    .header-section, .headline, .form-wrapper, .features-wrapper, .reviews-wrapper, .footer-section, 
+    .mission, .contact-area, 
+    .faq-wrapper {
       max-width: 960px;
+    }
+    h1 {
+      font-size: 3.75em;
+    }
+    h3, h4 {
+      font-size: 1.875em;
+    }
+    p {
+      font-size: 1.125em;
+      line-height: 24px;
+    }
+    .faq h2, .mission h2 {
+      font-size: 3em;
+    }
+    .faq h4 {
+      font-size: 1.125em;
+      line-height: 18px;
     }
 
   /* ----- Desktop Layout - Main page ------ */
-    .header-area {
+    .header-section {
       padding: 15px 0;
     }
     .headline h1 {
@@ -442,10 +542,12 @@ padding-top: 20px;
     .reviews article {
       width: 42%;
     }
-    .footer-area {
+    .footer-wrapper {
       justify-content: space-between;
       width: 80%;
     }
+
+  /* ----- Desktop Layout - About ------ */
     .contact, .social {
       width: 20%;
     }

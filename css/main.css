@@ -288,7 +288,7 @@ input[type=button] {
 /* ========== MOBILE - FAQ PAGE ========== */
 .map-container {
   position: relative;
-  padding-bottom: 75%;  /* keeps the aspect ratio 4:3 (height/width) */
+  padding-bottom: 125%;  /* keeps the aspect ratio (height/width) */
   height: 0;            /* padding gives the height */
   overflow: hidden;
 }
@@ -540,6 +540,9 @@ input[type=button] {
   .contact-content div {
     width: 45%;
   }
+  .map-container {
+    padding-bottom: 55%;
+  }
 }
 
 
@@ -615,7 +618,13 @@ input[type=button] {
   .reviews article {
     width: 42%;
   }
+
+  /* ========== DESKTOP - ABOUT PAGE ========== */
+  .map-container {
+    padding-bottom: 47%;
+  }
 }
+
 
 
 /* ==========================================================================

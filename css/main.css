@@ -285,6 +285,21 @@ input[type=button] {
   line-height: 24px;
 }
 
+/* ========== MOBILE - FAQ PAGE ========== */
+.map-container {
+  position: relative;
+  padding-bottom: 75%;  /* keeps the aspect ratio 4:3 (height/width) */
+  height: 0;            /* padding gives the height */
+  overflow: hidden;
+}
+.map-container iframe {
+  position: absolute;
+  top: 0;               /* postitions @ top */
+  left: 0;              /* postitions on the left */
+  width: 100%;          /* fill div */
+  height: 100%;
+}
+
 
 /* ==========================================================================
    Helper classes

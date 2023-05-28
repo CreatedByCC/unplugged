@@ -186,18 +186,22 @@ header .content-wrapper {
 footer {
   text-align: center;
 }
+footer .content-wrapper {
+  padding-bottom: 0;
+}
 .footer-content h4, .copyright p {
   padding: 20px 0;
 }
 .contact {
   padding-bottom: 50px;
 }
-footer p {
+footer p, footer h4 {
   margin: 0;
 }
 .social {
   width: 56%;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 .social-icons {
   display: flex;
@@ -216,9 +220,10 @@ footer p {
 }
 
 /* ========== MOBILE - MAIN PAGE ========== */
-.headline p, .features p, .features h2 {
+aside h3, aside p, .features p, .features h2, .reviews h2, .reviews h3 {
   margin: 0;
 }
+
 .headline {
   height: 500px;
   background-image: url(../img/unplugged-headline-img.jpg);
@@ -293,6 +298,7 @@ input[type=button] {
   padding-bottom: 0;
 }
 .faq h2 {
+  margin: 0;
   padding-bottom: 40px;
 }
 .faq-question {
@@ -302,7 +308,10 @@ input[type=button] {
   line-height: 24px;
 }
 
-/* ========== MOBILE - FAQ PAGE ========== */
+/* ========== MOBILE - ABOUT PAGE ========== */
+.mission h2, .contact-section h2 {
+  margin: 0;
+}
 .map-container {
   position: relative;
   padding-bottom: 125%;  /* keeps the aspect ratio (height/width) */
@@ -316,6 +325,7 @@ input[type=button] {
   width: 100%;          /* fill div */
   height: 100%;
 }
+
 
 
 /* ==========================================================================
@@ -463,6 +473,7 @@ input[type=button] {
   .footer-content{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
   }
   .footer-content h4 {
     padding-bottom: 40px;
@@ -470,12 +481,14 @@ input[type=button] {
   .contact {
     width: 40%;
     margin: 0;
+    padding-bottom: 0;
   }
   .social {
     width: 30%;
     margin: 0;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 0;
   }
 
   /* ========== TABLET - MAIN PAGE ========== */
@@ -496,6 +509,7 @@ input[type=button] {
     margin: 0;
     width: 40%;
   }
+  
 
   .features h2 {
     padding-bottom: 20px;
@@ -527,6 +541,9 @@ input[type=button] {
   }
 
   /* ========== TABLET - FAQ PAGE ========== */
+  .faq .content-wrapper {
+    padding-top: 50px;
+  }
   .faq-content {
     display: flex;
     justify-content: space-between;
@@ -597,7 +614,7 @@ input[type=button] {
     width: 20%;
   }
   .social {
-    width: 22%;
+    width: 20%;
     padding: 0;
   }
 
@@ -611,6 +628,9 @@ input[type=button] {
   }
   .form-description, .form {
     width: 30%;
+  }
+  input[type=text] {
+    margin: 0;
   }
 
   .features h2 {
@@ -634,6 +654,10 @@ input[type=button] {
   .reviews article {
     width: 42%;
   }
+
+  /* ========== DESKTOP - ABOUT PAGE ========== */
+  
+  
 
   /* ========== DESKTOP - ABOUT PAGE ========== */
   .map-container {

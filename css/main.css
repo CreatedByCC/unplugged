@@ -255,8 +255,9 @@ input[type=button] {
 .features-content article {
   padding: 30px 0;
 }
-.features-icon {
-  padding-bottom: 40px;
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .reviews h2 {
@@ -490,10 +491,7 @@ input[type=button] {
   }
   .features article {
     width: 30%;
-    padding: 0 10%;
-  }
-  .features-icon {
-    padding-bottom: 30px;
+    padding: 30px 10%;
   }
 
   .reviews h2 {
@@ -541,7 +539,7 @@ input[type=button] {
     width: 45%;
   }
   .map-container {
-    padding-bottom: 55%;
+    padding-bottom: 55%;    /* (350/640) */
   }
 }
 
@@ -605,7 +603,7 @@ input[type=button] {
   }
   .features article {
     width: 20%;
-    padding: 0 5%;
+    padding: 30px 5%;
   }
 
   .reviews .content-wrapper {
@@ -621,7 +619,7 @@ input[type=button] {
 
   /* ========== DESKTOP - ABOUT PAGE ========== */
   .map-container {
-    padding-bottom: 47%;
+    padding-bottom: 47%;      /* (450/960) */
   }
 }
 

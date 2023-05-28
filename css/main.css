@@ -102,6 +102,14 @@ html {
 body {
   font-size: 1em;
 }
+
+img {
+  width: 100%;
+}
+figure {
+  margin: 0;
+}
+
 h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
 }
@@ -135,6 +143,7 @@ a {
   color: #e2e3ed;
   text-decoration: none;
 }
+
 .content-wrapper {
   width: 90%;
   margin: auto;
@@ -197,8 +206,10 @@ footer p {
 .headline {
   height: 500px;
   background-image: url(../img/unplugged-headline-img.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
+
 aside h3 {
   padding: 20px 0;
 }
@@ -227,9 +238,11 @@ input[type=button] {
   text-align: center;
   text-transform: uppercase;
 }
+
 .features {
   background-image: url(../img/unplugged-features-img.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 .features h2 {
   padding-bottom: 60px;
@@ -245,6 +258,7 @@ input[type=button] {
 .features-icon {
   padding-bottom: 40px;
 }
+
 .reviews h2 {
   padding-bottom: 40px;
 }
@@ -413,6 +427,7 @@ input[type=button] {
   .header-content nav ul li {
     width: 50%;
   }
+
   .footer-content{
     display: flex;
     justify-content: space-between;
@@ -438,6 +453,7 @@ input[type=button] {
   .headline {
     height: 600px;
   }
+
   aside .content-wrapper {
     padding: 50px 0;
     display: flex;
@@ -447,6 +463,7 @@ input[type=button] {
     margin: 0;
     width: 40%;
   }
+
   .features h2 {
     padding-bottom: 20px;
   }
@@ -463,12 +480,20 @@ input[type=button] {
   .features-icon {
     padding-bottom: 30px;
   }
+
+  .reviews h2 {
+    width: 80%;
+  }
   .reviews-content {
     display: flex;
     justify-content: space-between;
   }
-  .reviews-content img, .reviews-content article {
+  .reviews-content figure, .reviews-content article {
     width: 49%;
+  }
+  .reviews h3 {
+    padding: 0;
+    margin: 0;
   }
 
   /* ========== TABLET - FAQ PAGE ========== */
@@ -531,6 +556,7 @@ input[type=button] {
   .header-content {
     padding: 15px 0;
   }
+
   .footer-content {
     justify-content: space-between;
   }
@@ -545,12 +571,14 @@ input[type=button] {
   .headline h1 {
     width: 70%;
   }
+
   aside .content-wrapper {
     justify-content: space-around;
   }
   .form-description, .form {
     width: 30%;
   }
+
   .features h2 {
     width: 90%;
   }
@@ -561,19 +589,14 @@ input[type=button] {
     width: 20%;
     padding: 0 5%;
   }
+
   .reviews .content-wrapper {
     padding-top: 50px;
   }
   .reviews h2 {
     padding-bottom: 50px;
   }
-  .reviews h3 {
-    padding: 0;
-    margin: 0;
-  }
-  .reviews img {
-    width: 49%;
-  }
+
   .reviews article {
     width: 42%;
   }

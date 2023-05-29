@@ -565,16 +565,16 @@ input[type=button] {
   .mission-content p {
     width: 46%;
   }
+  .map-container {
+    padding-bottom: 55%;    /* (350/640) */
+  }
   .contact-content {
     display: flex;
     justify-content: space-between;
   }
   .contact-content div {
-    width: 45%;
-  }
-  .map-container {
-    padding-bottom: 55%;    /* (350/640) */
-  }
+    width: 43%;
+  } 
 }
 
 
@@ -656,13 +656,15 @@ input[type=button] {
   }
 
   /* ========== DESKTOP - ABOUT PAGE ========== */
-  
-  
-
-  /* ========== DESKTOP - ABOUT PAGE ========== */
+  .mission h2, .contact-section h2 {
+    width: 90%;
+  }
   .map-container {
     padding-bottom: 47%;      /* (450/960) */
   }
+  .contact-content div {
+    width: 35%;
+  } 
 }
 
 

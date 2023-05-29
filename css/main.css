@@ -667,6 +667,13 @@ input[type=button] {
   } 
 }
 
+@media only screen and (max-width: 270px) {
+  /* ========== DESKTOP - FOOTER ========== */
+  .social {
+    width: 80%;
+  }
+}
+
 
 
 /* ==========================================================================
